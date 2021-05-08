@@ -1,0 +1,157 @@
+.library {
+  width: 100vw;
+  padding: 0 4vw;
+}
+
+.library header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.library header h2 {
+  font-size: 1rem;
+}
+
+.library header .button_group {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.7rem;
+}
+
+.library main {
+  overflow: overlay;
+  max-height: 48vh;
+  overscroll-behavior-y: contain;
+  scroll-behavior: smooth;
+}
+
+.library main ol {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.library main ol li:nth-child(3n) {
+  margin-right: 0;
+}
+
+.library main ol .new_book,
+.library main ol .book {
+  width: 28vw;
+  height: 22vh;
+  margin-right: 4vw;
+  margin-bottom: 2.5vh;
+}
+
+.library main ol .new_book form {
+  display: none;
+}
+
+.library main ol .new_book button {
+  width: 100%;
+  height: 100%;
+  appearance: none;
+  border: 2px dashed #aaa;
+  background: #fff;
+  padding: 0;
+  font-weight: bold;
+  font-size: 0.85rem;
+  outline: none;
+}
+
+.library main ol .book {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.library main ol .book img {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.library main ol .book a {
+  margin: 0 2vw 1vh;
+}
+
+@media (min-width: 768px) {
+  .library {
+    padding: 0 2.5vw;
+  }
+
+  .library header h2 {
+    font-size: 1.5rem;
+  }
+
+  .library header .button_group {
+    width: 22vw;
+    justify-content: space-around;
+    font-size: 1rem;
+  }
+
+  .library main {
+    max-height: 100vh;
+  }
+
+  .library main ol {
+    align-items: flex-start;
+  }
+
+  .library main ol li:nth-child(3n) {
+    margin-right: 4vw;
+  }
+
+  .library main ol .book {
+    width: 12vw;
+    height: 40vh;
+    margin-right: 4vw;
+    margin-bottom: 2.5vh;
+  }
+
+  .library main ol .new_book form {
+    display: none;
+  }
+  
+  .library main ol .new_book button {
+    width: 100%;
+    height: 100%;
+    appearance: none;
+    border: 2px dashed #aaa;
+    background: #fff;
+    padding: 0;
+    font-weight: bold;
+    font-size: 0.85rem;
+    outline: none;
+  }
+  
+  .library main ol .book {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  
+  .library main ol .book img {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .library main ol .book a {
+    margin: 0 2vw 1vh;
+  }
+
+  .library main ol .current_read {    
+  }
+}
